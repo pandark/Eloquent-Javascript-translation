@@ -1,0 +1,11 @@
+{
+  "name": "eloquent-javascript-fr"
+, "version": "0.1.0"
+, "description": "French translation of Marijn Haverbeke's Eloquent JavaScript book and its parser."
+, "author": "Pandark <apache.kof@gmail.com>"
+, "main": "app.js"
+, "dependencies": {
+    "optimist": "0.3.x"
+  }
+, "engine": "node >= 0.8.15"
+}
