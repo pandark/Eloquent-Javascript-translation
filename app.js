@@ -31,7 +31,7 @@ var argv = require('optimist')
   .argv;
 
 var util = require('util')
-  , Reader = require('reader');
+  , Reader = require('./lib/reader');
 
 if (argv.h) {
   util.puts('Don\'t panic!');
