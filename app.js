@@ -1,4 +1,6 @@
 #! /usr/bin/env node
+'use strict';
+
 var argv = require('optimist')
   .usage('Parse a file to make a book.\nUsage: $0')
   .options({
@@ -7,21 +9,21 @@ var argv = require('optimist')
       , 'description' : 'Input file to be parsed'
       , 'default' : 'book'
       }
-    , 'output' :
+  , 'output' :
       { 'alias' : 'o'
       , 'description' : 'Output directory'
       , 'default' : 'web'
       }
-    , 'format' :
+  , 'format' :
       { 'alias' : 'f'
       , 'description' : 'Output format (html, epub, latex)'
       , 'default' : 'html'
       }
-    , 'delay' :
+  , 'delay' :
       { 'alias' : 'd'
       , 'description' : 'Time between git pull'
       }
-    , 'help' :
+  , 'help' :
       { 'alias' : 'h'
       , 'description' : 'Displays a helpful message.'
       }
@@ -45,6 +47,9 @@ reader.on('error', function (err) {
 
 reader.on('data', function (data) {
   util.puts('New data!\n');
+  (function () {
+    return data;
+  })();
 });
 
 reader.on('end', function (data) {
