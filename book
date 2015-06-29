@@ -3934,7 +3934,7 @@ valeurs. Son fonctionnement ressemble à celui de |if|/|else|, sauf que là où
 expressions en fonction d’une condition. La première partie avant le point
 d’interrogation est la condition. Si cette condition est |true|, l’expression
 après le point d’interrogation est choisie, ici |1|. Si c’est |false|, la
-partie après la virgule, ici |0|, est choisie.
+partie après le deux-points, ici |0|, est choisie.
 
 L’utilisation de cet opérateur peut raccourcir efficacement des portions de
 code. Quand les expressions à l’intérieur deviennent vraiment énormes, ou que
